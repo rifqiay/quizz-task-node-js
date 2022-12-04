@@ -1,0 +1,1263 @@
+{
+	"info": {
+		"_postman_id": "92369603-9087-4d6f-93c1-d19c7f02bffa",
+		"name": "Task NodeJs",
+		"description": "API task Node Js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21479766"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "82"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"52-0OKssfhFM7U+vl2Iso8ORveH9kM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:36:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [],\n    \"message\": \"Register Admin Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"12345\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "538"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21a-Oy5/3XTMEMNbESLqMYRmpfRgTfE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:38:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"id\": \"db6252b8-3a10-4403-9538-6f6877c83d7e\",\n        \"username\": \"admin\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTU3NTkyfQ.anNiFgVUmQZxEEPtOdJGtz9hO7GgaxrFtOH5byOyLiY\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI\"\n    },\n    \"message\": \"Login success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/refresh-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"refresh-token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Refresh Token",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/admin/refresh-token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"admin",
+										"refresh-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "259"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"103-G8eqfmwt5cMJlG8F9VKskzkE65w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:40:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzYzMiwiZXhwIjoxNjcwMTU3NjkyfQ.KTWMaDgKwDBMSKqUBlvMY9NHp8TSYDr6dWd7rUXrx_8\"\n    },\n    \"message\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:42:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 10,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-U6PbzeY5NT8ANbBmUbmua5t6kbs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:43:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"data\": [],\n    \"message\": \"Create Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get by account number",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/get-account-number/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"get-account-number",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Get by account number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/get-account-number/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"get-account-number",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:45:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Get by account number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/get-account-number/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"get-account-number",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "294"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"126-TkBjYaLjBD2IyT1sca1NweALjnA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:46:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"username\": \"Santoso\",\n            \"accountnumber\": 123,\n            \"emailaddress\": \"santoso@mail.com\",\n            \"identitynumber\": 1122\n        },\n        {\n            \"id\": 10,\n            \"username\": \"Santoso\",\n            \"accountnumber\": 123,\n            \"emailaddress\": \"santoso@mail.com\",\n            \"identitynumber\": 1122\n        }\n    ],\n    \"message\": \"Get data from database\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get by identity number",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/get-identity-number/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"get-identity-number",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Get by identity number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/get-identity-number/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"get-identity-number",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:48:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Get by identity number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 7,\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/get-identity-number/11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"get-identity-number",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "419"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a3-uHrbR2/j7bLqU3UC2KbI9j2ec+4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:49:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 3,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        },\n        {\n            \"id\": 4,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        },\n        {\n            \"id\": 6,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        }\n    ],\n    \"message\": \"Get data from database success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/update/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"update",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:50:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"Santoso\",\r\n  \"accountNummber\": 123,\r\n  \"emailAddress\": \"santoso@mail.com\",\r\n  \"identityNumber\": 1122\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/update/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"update",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-J9KPhZ3HodXnHBTQ393+VmNwq3g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:51:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [],\n    \"message\": \"Update Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/delete/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"delete",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:52:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-DdZSsUiXtBPYuaaTJCJh89f9gYA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:52:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [],\n    \"message\": \"Delete Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImRiNjI1MmI4LTNhMTAtNDQwMy05NTM4LTZmNjg3N2M4M2Q3ZSIsImlhdCI6MTY3MDE1NzUzMiwiZXhwIjoxNjcwMTYxMTMyfQ.9X2Y3FTwUJSdLdKfqvF_BeLgRA11UkcVwGT-nCxJjKI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f-NG6dz13EEsooWcK9lk9w5hDux+g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:53:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"server need token\"\n}"
+						},
+						{
+							"name": "Success Get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "642"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"282-TdA0P5hO7RPFxfQSWK+hAewn/TY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Dec 2022 12:54:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"id\": 3,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        },\n        {\n            \"id\": 4,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        },\n        {\n            \"id\": 6,\n            \"username\": \"samsul edit\",\n            \"accountnumber\": 11,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 11\n        },\n        {\n            \"id\": 1,\n            \"username\": \"samsul edit2\",\n            \"accountnumber\": 112,\n            \"emailaddress\": \"samsuledit@mail.com\",\n            \"identitynumber\": 112\n        },\n        {\n            \"id\": 2,\n            \"username\": \"Santoso\",\n            \"accountnumber\": 123,\n            \"emailaddress\": \"santoso@mail.com\",\n            \"identitynumber\": 1122\n        }\n    ],\n    \"message\": \"Get all data from database success\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
